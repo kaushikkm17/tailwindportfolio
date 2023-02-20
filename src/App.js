@@ -314,11 +314,11 @@ function App() {
 				<h1 className='my-12 text-4xl mx-12 px-4 py-2 shadow-lg shadow-red-700 ring-4'>Contact Me</h1>
 				<div className="mx-auto flex flex-col lg:block">
 					<h3 className="lg:ml-12 text-yellow-100 text-bold text-2xl my-8">Email me with a preformatted message:</h3>
-					<a rel="noreferrer" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=kaushikmondal1717@gmail.com&su=Portfolio%20Connection&body=Dear%20Kaushik%2C%0A%0AHey%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20together%20or%20have%20a%20job%20opportunity%20for%20you.%0A%0ABest%20Regards%2C%20%0A%0A%3CYour%20Name%20Here%3E" target='_blank' className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-24 rounded text-bold w-fit">
+					<a rel="noreferrer" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=kaushikmondal1717@gmail.com&su=Portfolio%20Connection&body=Dear%20Kaushik%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20together%20or%20have%20a%20job%20opportunity%20for%20you.%0A%0ABest%20Regards%2C%20%0A%0A%3CYour%20Name%20Here%3E" target='_blank' className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-24 rounded text-bold w-fit">
 						<img alt="Google icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" className="w-6 inline mr-4"/>
 						Gmail With Preformatted Message
 					</a>
-					<a className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-4 rounded text-bold w-fit" href="https://outlook.live.com/owa/?path=/mail/action/compose&to=kaushikmondal1717@gmail.com&subject=Portfolio%20Connection&body=Dear%20Kaushik%2C%0A%0AHey%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20together%20or%20have%20a%20job%20opportunity%20for%20you.%0A%0ABest%20Regards%2C%20%3CYour%20Name%20Here%3E">Outlook</a>
+					<a className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-4 rounded text-bold w-fit" href="https://outlook.live.com/owa/?path=/mail/action/compose&to=kaushikmondal1717@gmail.com&subject=Portfolio%20Connection&body=Dear%20Kaushik%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20together%20or%20have%20a%20job%20opportunity%20for%20you.%0A%0ABest%20Regards%2C%20%3CYour%20Name%20Here%3E">Outlook</a>
 
 					<a rel="noreferrer" href="mailto:kaushikmondal1717@gmail.com" target='_blank' className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-4 rounded text-bold w-fit">
 						Email without Gmail
