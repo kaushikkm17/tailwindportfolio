@@ -1,8 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
-  background-color: black;
+  background: black;
   color: white;
 }
 
 svg{
   cursor: pointer;
+  background-color: transparent;
 }
