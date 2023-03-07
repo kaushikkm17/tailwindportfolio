@@ -6,8 +6,8 @@ function App() {
 		<>
 		<ParticleEffect />
 		<header>
-			<nav className="bg-black p-4 flex items-center justify-between">
-				<a href="/" className="text-white mr-6 font-bold">Kaushik Mondal</a>
+			<nav className="bg-transparent p-4 flex items-center justify-between">
+				<a href="/" className="text-white mr-6 font-bold hidden sm:block">Kaushik Mondal</a>
 				<ul className="flex">
 					<li className="inline-block mr-4">
 						<svg viewBox="0 0 128 128" className="inline w-6 opacity-90">
@@ -20,10 +20,10 @@ function App() {
 						</svg>
 					</li>
 					<li className="inline-block mr-4">
-						<a href="#about" className="text-yellow-100 font-medium hover:text-yellow-200">About</a>
+						<a href="#skills" className="text-yellow-100 font-medium hover:text-yellow-200">Skills</a>
 					</li>
 					<li className="inline-block mr-4">
-						<a href="#skills" className="text-yellow-100 font-medium hover:text-yellow-200">Skills</a>
+						<a href="#about" className="text-yellow-100 font-medium hover:text-yellow-200">About</a>
 					</li>
 					<li className="inline-block mr-4">
 						<a href="#projects" className="text-yellow-100 font-medium hover:text-yellow-200">Projects</a>
@@ -34,20 +34,21 @@ function App() {
 					
 				</ul>
 			</nav> 
-		</header>
-		<main className="p-0 lg:p-10 m-4 lg:mx-40">
 			<div className="flex justify-center w-full">
-
-				<section className="inline-flex">
-					<img src="images/IMG_2781.jpg" alt="profile pic" className="rounded-full"/>
-					<div className="">
-						<h1 className='text-bold text-4xl text-center m-4'>Kaushik Mondal</h1>
-						<h2 className="text-bold text-yellow-100 text-xl text-center">Software Developer</h2>
-						<button className="bg-gray-600 hover:bg-gray-700 text-white py-1 px-2 m-4 rounded" onClick={() => window.open('resume.pdf', '_blank')}>View Resume</button>
+	
+				<section className="flex flex-wrap mx-10 my-10 sm:my-36">
+					<img src="images/IMG_2781.jpg" alt="profile pic" className="rounded-full outline"/>
+					<div className="flex-col items-center justify-center sm:mx-20 h-fit my-16">
+					  <h1 className='text-bold sm:text-6xl text-5xl my-4 text-cyan-100 shadow-md'>Hi, I'm Kaushik</h1>
+					  <h2 className="text-bold text-white text-2xl max-w-xl my-4">A creative <span className="text-yellow-100">full stack developer</span> with a passion for <span className="text-yellow-100">building exceptional experiences</span> that users will love.</h2>
+					  <button className="text-2xl bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 my-4 rounded" onClick={() => window.open('resume.pdf', '_blank')}>View Resume</button>
 					</div>
 				</section>
+				  
 			</div>
-			<section id="skills" className="flex flex-wrap justify-center my-8 m-0 sm:mx-10">
+		</header>
+		<main className="p-0 lg:p-10 m-4 lg:mx-40">
+			<section id="skills" className="flex flex-wrap justify-center sm:my-20 my-8 m-0 sm:mx-10">
 				<div className="bg-transparent flex flex-col items-center justify-center m-2">
 					<svg viewBox="0 0 128 128" width="50" height="50">
 						<path fill="#E44D" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
@@ -347,35 +348,24 @@ function App() {
 			</section>
 			<section id="contact" className="pb-10">
 				<h1 className='my-12 text-4xl mx-12 px-4 py-2 shadow-lg shadow-red-700 ring-4'>Contact Me</h1>
-				<div className="flex flex-col w-fit mx-auto">
-					<h3 className="lg:ml-12 text-yellow-100 text-bold text-2xl my-8">Email me with a preformatted message:</h3>
-					<div className="flex sm:flex-row flex-col items-center">
-						<a rel="noreferrer" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=kaushikmondal1717@gmail.com&su=Portfolio%20Connection&body=Dear%20Kaushik%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20together%20or%20have%20a%20job%20opportunity%20for%20you.%0A%0ABest%20Regards%2C%20%0A%0A%3CYour%20Name%20Here%3E" target='_blank' className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-24 rounded text-bold w-fit">
-							<img alt="Google icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" className="w-6 inline mr-4"/>
-							Gmail With Preformatted Message
-						</a>
-						<a className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-4 rounded text-bold w-fit" href="https://outlook.live.com/owa/?path=/mail/action/compose&to=kaushikmondal1717@gmail.com&subject=Portfolio%20Connection&body=Dear%20Kaushik%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20together%20or%20have%20a%20job%20opportunity%20for%20you.%0A%0ABest%20Regards%2C%20%3CYour%20Name%20Here%3E">Outlook</a>
-
-						<a rel="noreferrer" href="mailto:kaushikmondal1717@gmail.com" target='_blank' className="bg-red-400 py-3 px-6 my-4 ml-0 lg:ml-4 rounded text-bold w-fit">
-							Email without Gmail
-						</a>
+				<form action="https://formsubmit.co/c67f147b865e1e0dc48b5b99b5ed8a71" method="POST" class="w-full max-w-lg mx-auto my-8">
+					<div class="bg-gray-600 rounded-lg shadow-lg p-6">
+					  <div class="mb-6">
+						<label for="name" class="block mb-2 font-semibold text-yellow-100">Name:</label>
+						<input type="text" name="name" required class="text-black block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" />
+					  </div>
+					  <div class="mb-6">
+						<label for="email" class="block mb-2 font-semibold text-yellow-100">Email:</label>
+						<input type="email" name="email" required class="text-black block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" />
+					  </div>
+					  <div class="mb-6">
+						<label for="message" class="block mb-2 font-semibold text-yellow-100">Message:</label>
+						<textarea name="message" required rows="5" class="text-black block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"></textarea>
+					  </div>
+					  <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Send</button>
 					</div>
-					<h3 className="lg:ml-12 text-yellow-100 text-bold text-2xl my-8">Copy and paste:</h3>
-					<p className="lg:ml-24 text-xl text-center sm:text-left">kaushikmondal1717@gmail.com</p>
-					<h3 className="sm:ml-12 text-yellow-100 text-bold text-2xl my-8">Socials:</h3>
-					<div className="flex justify-center sm:justify-start">
-						<a rel="noreferrer" href="https://www.linkedin.com/in/kaushikdev/" target="_blank">
-							<svg viewBox="0 0 128 128" className="inline w-20 sm:ml-24">
-								<path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
-							</svg>
-						</a>
-						<a rel="noreferrer" href="https://github.com/kaushikkm17" target="_blank">
-							<svg viewBox="0 0 128 128" className="inline w-20 ml-12">
-								<g fill="#eeeeee"><path fillRule="evenodd" clipRule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
-							</svg>
-						</a>
-					</div>
-				</div>
+				  </form>
+				  
 			</section>
 		</main>
 		<footer className="text-center p-4">
